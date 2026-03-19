@@ -17,7 +17,6 @@ import ch.alpine.tensor.red.Times;
     IO.println("NON BLOCKING");
     Tensor model2Pixel = klotskiDemo.getWindow().geometricComponent.getModel2Pixel();
     klotskiDemo.getWindow().geometricComponent.setModel2Pixel(Times.of(Tensors.vector(0.4, 0.4, 1), model2Pixel));
-    // klotskiDemo.timerFrame.geometricComponent.setOffset(100, 600);
     KlotskiSolution klotskiSolution = klotskiDemo.compute();
     Export.object(KlotskiDemo.solutionFile(klotskiProblem), klotskiSolution);
     klotskiDemo.close();
