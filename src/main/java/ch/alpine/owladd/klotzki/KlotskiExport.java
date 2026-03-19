@@ -5,7 +5,7 @@ import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import javax.imageio.ImageIO;
 
@@ -60,7 +60,7 @@ import ch.alpine.tensor.pdf.BinCounts;
           {
             String filename = imageFilename("ani", klotskiProblem, "gif");
             try (AnimationWriter animationWriter = //
-                new GifAnimationWriter(ROOT.resolve(filename), 500, TimeUnit.MILLISECONDS)) {
+                new GifAnimationWriter(ROOT.resolve(filename), Duration.ofMillis(500))) {
               for (StateTime stateTime : klotskiSolution.list()) {
                 BufferedImage bufferedImage = new KlotskiPlot(klotskiProblem, RES).plot(stateTime.state());
                 animationWriter.write(bufferedImage);
