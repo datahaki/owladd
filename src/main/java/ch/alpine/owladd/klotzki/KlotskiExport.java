@@ -9,6 +9,7 @@ import java.time.Duration;
 
 import javax.imageio.ImageIO;
 
+import ch.alpine.bridge.fig.Rasterize;
 import ch.alpine.bridge.fig.Show;
 import ch.alpine.bridge.fig.plt.ListPlot;
 import ch.alpine.bridge.io.AnimationWriter;
@@ -82,7 +83,7 @@ import ch.alpine.tensor.pdf.BinCounts;
             show.add(ListPlot.of(expandCount, klotskiSolution.domain().get(Tensor.ALL, 2)));
             show.add(ListPlot.of(expandCount, klotskiSolution.domain().get(Tensor.ALL, 3)));
             String filename = imageFilename("eva", klotskiProblem, "png");
-            show.export(ROOT.resolve(filename), new Dimension(500, 130));
+            new Rasterize(show, new Dimension(500, 130)).export(ROOT.resolve(filename));
             htmlUtf8.appendln("<td><img src='" + filename + "'/>");
           }
           htmlUtf8.appendln("</tr>");
