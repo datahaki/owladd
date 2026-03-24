@@ -99,10 +99,6 @@ public class KlotskiDemo extends AbstractDemo implements RenderInterface {
       klotskiPlot.new Plot(board).render(geometricLayer, graphics);
   }
 
-  public void close() {
-    getWindow().close();
-  }
-
   public static Path solutionFile(KlotskiProblem klotskiProblem) {
     return FOLDER_SOLUTIONS.resolve(klotskiProblem.name() + ".object");
   }
