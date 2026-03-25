@@ -11,7 +11,7 @@ import ch.alpine.tensor.Scalars;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ class KlotskiFlows implements StateTimeFlows, Serializable {
+class KlotskiFlows implements StateTimeFlows, Serializable {
   private final int lx;
   private final int ly;
 

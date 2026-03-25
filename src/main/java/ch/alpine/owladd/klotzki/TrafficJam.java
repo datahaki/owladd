@@ -5,7 +5,7 @@ import ch.alpine.tensor.RealScalar;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum TrafficJam {
+enum TrafficJam {
   CORNERS_ONLY(//
       Tensors.vector(0, 0, 0), //
       // ---

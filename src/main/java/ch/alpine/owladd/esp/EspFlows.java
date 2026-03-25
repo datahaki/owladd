@@ -11,7 +11,7 @@ import ch.alpine.owlets.math.state.StateTime;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum EspFlows implements StateTimeFlows {
+enum EspFlows implements StateTimeFlows {
   INSTANCE;
 
   private final Map<Tensor, Collection<Tensor>> map = new HashMap<>();

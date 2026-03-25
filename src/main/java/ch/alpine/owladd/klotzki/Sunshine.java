@@ -5,7 +5,7 @@ import ch.alpine.tensor.RealScalar;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum Sunshine {
+enum Sunshine {
   REDUCED(//
       Tensors.vector(8, 10, 5), //
       // Tensors.vector(1, 5, 7), //

@@ -6,7 +6,7 @@ import ch.alpine.owlets.math.order.VectorLexicographic;
 import ch.alpine.owlets.math.state.StateTime;
 import ch.alpine.tensor.Tensor;
 
-/* package */ enum KlotskiStateTimeRaster implements StateTimeRaster {
+enum KlotskiStateTimeRaster implements StateTimeRaster {
   INSTANCE;
 
   @Override // from StateTimeRaster

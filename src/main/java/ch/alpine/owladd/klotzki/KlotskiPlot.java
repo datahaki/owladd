@@ -23,7 +23,7 @@ import ch.alpine.tensor.Tensors;
 import ch.alpine.tensor.ext.HomeDirectory;
 import ch.alpine.tensor.red.Times;
 
-/* package */ class KlotskiPlot {
+class KlotskiPlot {
   private static final Color STONE_GOAL = new Color(128 - 32, 128 - 32, 255);
   private static final Color STONE_MISC = new Color(128 + 32, 128 + 32, 255);
   static final double MARGIN = 0.08;

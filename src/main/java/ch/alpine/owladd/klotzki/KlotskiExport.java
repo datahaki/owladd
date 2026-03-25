@@ -23,7 +23,7 @@ import ch.alpine.tensor.img.ColorDataLists;
 import ch.alpine.tensor.io.Import;
 import ch.alpine.tensor.pdf.BinCounts;
 
-/* package */ enum KlotskiExport {
+enum KlotskiExport {
   ;
   private static final Path ROOT = HomeDirectory.public_html.resolve("numerics");
   private static final int RES = 24;

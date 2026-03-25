@@ -13,7 +13,7 @@ import ch.alpine.tensor.Scalar;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.nrm.Vector1Norm;
 
-/* package */ record KlotskiGoalAdapter(KlotskiGoalRegion klotskiGoalRegion, Tensor goal_xy) //
+record KlotskiGoalAdapter(KlotskiGoalRegion klotskiGoalRegion, Tensor goal_xy) //
     implements GoalInterface, Serializable {
   /** Example: for Huarong Tensors.vector(0, 4, 2)
    * 

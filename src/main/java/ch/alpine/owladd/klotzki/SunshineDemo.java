@@ -8,7 +8,7 @@ import ch.alpine.tensor.Tensors;
 import ch.alpine.tensor.io.Export;
 import ch.alpine.tensor.red.Times;
 
-/* package */ enum SunshineDemo {
+enum SunshineDemo {
   ;
   static void main() throws IOException {
     KlotskiProblem klotskiProblem = Sunshine.ORIGINAL.create();

@@ -1,7 +1,7 @@
 // code by jph
 package ch.alpine.owladd.klotzki;
 
-/* package */ enum Block {
+enum Block {
   _b22(2, 2), // 0
   _b21(2, 1), // 1
   _b12(1, 2), // 2

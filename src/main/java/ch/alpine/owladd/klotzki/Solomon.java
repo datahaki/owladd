@@ -5,7 +5,7 @@ import ch.alpine.tensor.RealScalar;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum Solomon {
+enum Solomon {
   SIMPLE(//
       Tensors.vector(7, 0, 1)), //
   /** 19 */

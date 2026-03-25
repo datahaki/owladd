@@ -5,7 +5,7 @@ import ch.alpine.tensor.RealScalar;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum Huarong {
+enum Huarong {
   /** type (0, 0)
    * steps 19 */
   ONLY_18_STEPS(//

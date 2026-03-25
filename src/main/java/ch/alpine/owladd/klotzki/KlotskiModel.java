@@ -7,7 +7,7 @@ import ch.alpine.tensor.Scalars;
 import ch.alpine.tensor.Tensor;
 
 /** u == {index, dx, dy} */
-/* package */ enum KlotskiModel implements StateSpaceModel {
+enum KlotskiModel implements StateSpaceModel {
   INSTANCE;
 
   @Override // from StateSpaceModel

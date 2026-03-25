@@ -5,7 +5,7 @@ import ch.alpine.tensor.Scalars;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.chq.MemberQ;
 
-/* package */ record KlotskiObstacleRegion(int sx, int sy) implements MemberQ {
+record KlotskiObstacleRegion(int sx, int sy) implements MemberQ {
   /** @param size
    * @return */
   public static MemberQ fromSize(Tensor size) {

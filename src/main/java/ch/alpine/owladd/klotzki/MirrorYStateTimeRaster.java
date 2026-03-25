@@ -11,7 +11,7 @@ import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 import ch.alpine.tensor.alg.Flatten;
 
-/* package */ record MirrorYStateTimeRaster(int sy) implements StateTimeRaster, Serializable {
+record MirrorYStateTimeRaster(int sy) implements StateTimeRaster, Serializable {
   public Tensor mirror(Tensor state) {
     return Tensor.of(state.stream().map(this::mirrorStone));
   }

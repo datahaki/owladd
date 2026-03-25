@@ -4,7 +4,7 @@ package ch.alpine.owladd.klotzki;
 import ch.alpine.tensor.Tensor;
 import ch.alpine.tensor.Tensors;
 
-/* package */ enum Klondike {
+enum Klondike {
   ;
   static final Tensor BOARD = Tensors.of( //
       Tensors.vector(4, 7, 7), //
