@@ -17,9 +17,9 @@ import ch.alpine.bridge.io.ani.AnimationWriter;
 import ch.alpine.bridge.io.ani.GifAnimationWriter;
 import ch.alpine.owlets.math.state.StateTime;
 import ch.alpine.tensor.Tensor;
+import ch.alpine.tensor.col.ColorDataIndexed;
+import ch.alpine.tensor.col.ColorDataLists;
 import ch.alpine.tensor.ext.HomeDirectory;
-import ch.alpine.tensor.img.ColorDataIndexed;
-import ch.alpine.tensor.img.ColorDataLists;
 import ch.alpine.tensor.io.Import;
 import ch.alpine.tensor.pdf.BinCounts;
 
