@@ -3,7 +3,6 @@ package ch.alpine.owladd.klotzki;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,7 @@ import ch.alpine.tensor.ext.Serialization;
 
 class KlotskiDemoTest {
   @Test
-  void testSimple() throws ClassNotFoundException, IOException {
+  void testSimple() {
     KlotskiProblem klotskiProblem = Serialization.copy(Huarong.ONLY_18_STEPS.create());
     KlotskiDemo klotskiDemo = new KlotskiDemo(klotskiProblem);
     List<StateTime> list = klotskiDemo.compute().list();
@@ -22,7 +21,7 @@ class KlotskiDemoTest {
   }
 
   @Test
-  void testPennant() throws ClassNotFoundException, IOException {
+  void testPennant() {
     KlotskiProblem klotskiProblem = Serialization.copy(Pennant.PUZZLE.create());
     KlotskiDemo klotskiDemo = new KlotskiDemo(klotskiProblem);
     List<StateTime> list = klotskiDemo.compute().list();
